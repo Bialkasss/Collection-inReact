@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "The Witcher",
+    "rating": 5,
+    "description": "A fantasy book about a monster hunter.",
+    "image": {
+      "src": "https://www.orbitbooks.net/wp-content/uploads/2022/06/Sapkowski_TimeofContempt_HC-658x1024.jpg",
+      "alt": "The Witcher Book Cover"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Mockingjay",
+    "rating": 4,
+    "description": "The final book in the Hunger Games series.",
+    "image": {
+      "src": "https://m.media-amazon.com/images/I/81UQRMDqbIL._AC_UF894,1000_QL80_.jpg",
+      "alt": "Mockingjay Book Cover"
+    }
+  },
+  {
+    "id": 3,
+    "name": "TOPR",
+    "rating": 5,
+    "description": "A thrilling adventure book.",
+    "image": {
+      "src": "https://cdn.militaria.pl/media/catalog/product/cache/abeeea0176a52282aa7932638cabb878/2/8/2801547_Ksiazka-TOPR-zeby-inni-mogli-przezyc-Beata-Sabala-Zielinska-glowne.jpg",
+      "alt": "TOPR Book Cover"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Life of Pi",
+    "rating": 4,
+    "description": "Adventure novel published by Yann Martel.",
+    "image": {
+      "src": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1631251689i/4214.jpg",
+      "alt": "Life of Pi Book Cover"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Permanent Record",
+    "rating": 4,
+    "description": "A dystopian novel by Edward Snowden.",
+    "image": {
+      "src": "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/permanent-record-b-iext69371298.jpg",
+      "alt": "Permanent Record Book Cover"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Tales of the City",
+    "rating": 4,
+    "description": "A collection of short stories.",
+    "image": {
+      "src": "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/tales-of-the-city-b-iext147720691.jpg",
+      "alt": "Tales of the City Book Cover"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Astrophysics for People in a Hurry",
+    "rating": 5,
+    "description": "A book about the universe and astrophysics.",
+    "image": {
+      "src": "https://ecsmedia.pl/cdn-cgi/image/format=webp,width=544,height=544,/c/astrophysics-for-people-in-a-hurry-b-iext130344907.jpg",
+      "alt": "Astrophysics Book Cover"
+    }
+  }
+]
