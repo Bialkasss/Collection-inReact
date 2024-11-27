@@ -4,6 +4,10 @@ function Book({ book, onDelete, onRatingChange }) {
   const [isEditing, setIsEditing] = useState(false);
   const [rating, setRating] = useState(book.rating);
 
+  React.useEffect(() => {
+    setRating(book.rating); 
+  }, [book.rating]);
+
   const handleRatingClick = () => {
     setIsEditing(true);
   };
@@ -13,13 +17,18 @@ function Book({ book, onDelete, onRatingChange }) {
   };
 
   const handleRatingBlur = () => {
-    setIsEditing(false);
-    onRatingChange(book.id, rating);
+    if (rating >= 1 && rating <= 5) {
+      setIsEditing(false);
+      onRatingChange(book.id, rating); 
+    } else {
+      alert("Rating must be between 1 and 5.");
+      setRating(book.rating); 
+    }
   };
 
   const handleRatingKeyPress = (e) => {
     if (e.key === "Enter") {
-      handleRatingBlur();
+      handleRatingBlur(); 
     }
   };
 
@@ -47,10 +56,7 @@ function Book({ book, onDelete, onRatingChange }) {
         )}
       </div>
       <p className="book-description">{book.description}</p>
-      <button
-        className="delete-button"
-        onClick={onDelete}
-      >
+      <button className="delete-button" onClick={onDelete}>
         Delete
       </button>
     </div>

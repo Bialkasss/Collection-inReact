@@ -1,19 +1,17 @@
 import React from "react";
 import Book from "./Book";
 
-function List({ books, onDelete, onRatingChange, search }) {
-  const filteredBooks = books.filter((book) =>
-    book.name.toLowerCase().includes(search)
-  );
-
+function List({ books, onDelete, onRatingChange }) {
   return (
     <div className="book-container">
-      {filteredBooks.map((book) => (
+      {books.map((book) => (
         <Book
           key={book.id}
           book={book}
           onDelete={() => onDelete(book.id)}
-          onRatingChange={(id, rating) => onRatingChange(book.id, rating)}
+          onRatingChange={(id, newRating) => {
+            onRatingChange(book.id, newRating);
+          }}
         />
       ))}
     </div>

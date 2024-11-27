@@ -18,10 +18,20 @@
 
 .add-book-button:active {
   transform: scale(0.95);
+  background-color: #F55A5A; 
 }
 
-.add-book-button.clicked {
+.add-book-button.cancel {
   background-color: #F55A5A; 
+}
+
+.add-book-button.cancel:hover {
+  background-color: #b32b2b; 
+}
+
+.add-book-button.cancel:active {
+  transform: scale(0.95);
+  background-color: #b32b2b; /* Even darker red on click */
 }
 
 
